@@ -2,7 +2,7 @@ const shuffle = (array) => {
   array.sort(() => Math.random() - 0.5);
 } 
 
-let MBTI_questions = shuffle([
+let questions = [
     {
       "type": "EI",
       "q": "당신은 팀플을 하게 되었습니다. 어떻게 행동하실건가요 ?",
@@ -122,12 +122,13 @@ let MBTI_questions = shuffle([
       "A": "음 .. 다음주 월요일까지니까 토요일정도에 하면 되겠다.",
       "B": "아 과제 또 생겼네 ..",
     },
-]);
+]
+shuffle(questions)
 
 // KEY: {
 //   "body": MBTI 설명,
 //   "major": 학과,
-//   "sub_major": 세부전공 (없으면 NULL),
+//   "sub_major": 세부전공 (없으면 undefined),
 //   "url": 각 과 URL
 // }
 const result = {
@@ -140,7 +141,7 @@ const result = {
   "ESTJ": {
     "body": "단시간에 실용적인 결정을 내릴 수 있어 지도자의 역할을 잘 수행함",
     "major": "항공경영학과",
-    "sub_major": NULL,
+    "sub_major": undefined,
     "url": "http://college.kau.ac.kr/web/index.do?siteFlag=biz_www",
   },
   "ESFP": {
@@ -152,31 +153,31 @@ const result = {
   "ENTP": {
     "body": "뛰어난 창의력의 소유자가 많아 지속적인 독창성이 요구되는 직무에 적합",
     "major": "창업",
-    "sub_major": NULL,
+    "sub_major": undefined,
     "url": "http://college.kau.ac.kr/web/index.do?siteFlag=eie_www",
   },
   "ESTP": {
     "body": "뛰어난 창의력의 소유자가 많아 지속적인 독창성이 요구되는 직무에 적합",
     "major": "Al자율주행시스템공학과",
-    "sub_major": NULL,
+    "sub_major": undefined,
     "url": "http://college.kau.ac.kr/web/index.do?siteFlag=eie_www",
   },
   "ENTJ": {
     "body": "논리적, 분석적이므로 조직성 및 효율성이 요구되는 권위적인 직업에 끌리는 경향",
     "major": "학군단",
-    "sub_major": NULL,
+    "sub_major": undefined,
     "url": "http://rotc.kau.ac.kr/",
   },
   "INTP": {
     "body": "이론적이고 정확한 대상을 선호하기 때문에 이와 관련된 업무 역량이 요구되는 직업에서 훌륭한 성과를 얻을 가능성이 큼",
     "major": "신소재공학과",
-    "sub_major": NULL,
+    "sub_major": undefined,
     "url": "http://college.kau.ac.kr/web/index.do?siteFlag=materials_www",
   },
   "ENFP": {
     "body": "어떤 경우에도 가능성을 발견할 수 있으며, 자기표현에 뛰어나기 때문에 해당 역량이 요구되는 업무에서 능력을 발휘",
     "major": "자율전공학부",
-    "sub_major": NULL,
+    "sub_major": undefined,
     "url": "http://college.kau.ac.kr/web/index.do?siteFlag=free_www",
   },
   "ENFJ": {
@@ -194,7 +195,7 @@ const result = {
   "ISTJ": {
     "body": "책임감이 강하고 일을 열심히 하는 사람들이 많다. 비밀스럽지만, 신뢰성이 요구되는 직종에 종사하면 훌륭한 성과를 낼 수 있다.",
     "major": "항공운항학과",
-    "sub_major": NULL,
+    "sub_major": undefined,
     "url": "http://college.kau.ac.kr/web/index.do?siteFlag=hw_www",
   },
   "ISFJ": {
@@ -206,7 +207,7 @@ const result = {
   "INTJ": {
     "body": "항상 무언가를 하고 싶어 합니다. 이론적인 사고가 주요 업무 역량인 직무에서 빛을 발할 수 있다.",
     "major": "소프트웨어학과",
-    "sub_major": NULL,
+    "sub_major": undefined,
     "url": "http://college.kau.ac.kr/web/index.do?siteFlag=sw_www",
   },
   "ISFP": {
@@ -218,7 +219,7 @@ const result = {
   "INFP": {
     "body": "자기 자신이 가지고 있는 가치에 동기 부여를 받으며 이들을 포용력 및 적응력이 요구되는 직무에 적합하다.",
     "major": "대학원",
-    "sub_major": NULL,
+    "sub_major": undefined,
     "url": "http://grad.kau.ac.kr/index/main.php",
   },
   "INFJ": {
@@ -227,5 +228,4 @@ const result = {
     "sub_major": "전자 전공",
     "url": "http://grad.kau.ac.kr/index/main.php",
   },
-
 };
