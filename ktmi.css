@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* font */
+@font-face {
+    font-family: 'LeferiPoint-BlackA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeferiPoint-WhiteA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeferiBaseType-BoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-BoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeferiBaseType-RegularA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+}
+
+/* start */
+
+.start-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* logo */
+.logo-kmti {
+    width: 118px;
+    margin-bottom: 50px;
+}
+
+.logo-kau {
+    width: 70px;
+}
+
+/* slogan */
+.slogan-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.slogan-text {
+    font-family: 'LeferiPoint-BlackA';
+    font-size: 40px;
+    color: #1D2020;
+}
+
+.slogan-img-container {
+    display: flex;
+    align-items: center;
+}
+
+/* btn */
+.start-btn {
+    width: 312px;
+    height: 66px;
+    border-color: transparent;
+    border-radius: 38px;
+    font-family: 'LeferiBaseType-RegularA';
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #165EDF;
+    cursor: pointer;
+}
+
+/* question */
+
+.question {
+    display: none;
+    /* width: 499px; */
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+.page {
+    
+    float:right;
+    color:gray;
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.question-title {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    width: 340px;
+    height: 96px;
+    background-color: white;
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-size: 16px;
+    color: #1D2020;
+    border: solid 1px #EBEBEB;
+    border-radius: 49px;
+    margin-top: 30px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* result */
+
+:root {
+/*color*/
+--main-color: #165edf;
+--black: #1d2020;
+--gray: #b5b5b5;
+
+/*size*/
+
+/*font size*/
+--title: 25px;
+--subtitle: 17px;
+--content: 15px;
+}
+
+.result-container {
+display: none;
+text-align: center;
+margin-top: 30px;
+/* width: 90%;
+max-width: 700px; */
+/* height: 100vh; */
+}
+
+.result-container h3 {
+font-size: 24px;
+color: var(--gray);
+font-family: "LeferiPoint-WhiteA";
+font-style: normal;
+}
+
+.result-container h2 {
+font-size: 28px;
+color: var(--black);
+font-family: "LeferiPoint-BlackA";
+}
+
+.result-container h5 {
+font-size: 16px;
+color: #1d2020;
+font-family: "LeferiPoint-WhiteA";
+}
+
+.result-container p {
+font-family: "Pretendard";
+font-weight: 300;
+font-size: 16px;
+color: var(--black);
+margin-top: 1.5%;
+}
+
+.point-text {
+color: var(--main-color);
+font-family: "LeferiPoint-BlackA";
+}
+
+.major-img {
+width: 50vw;
+max-width: 500px;
+height: 30vw;
+min-height: 290px;
+object-fit: cover;
+}
+
+.result-container input {
+font-family: "LeferiBaseType-RegularA";
+height: 40px;
+border-radius: 38px;
+}
+
+.button-linear {
+margin-top: 10px;
+justify-content: center;
+display: flex;
+}
+
+.button-linear input {
+width: 172px;
+border: var(--main-color) solid;
+background-color: white;
+color: var(--black);
+margin: 3px;
+text-align: center;
+cursor: pointer;
+}
+
+.link-major {
+margin-top: 50px;
+width: 356px;
+background-color: var(--main-color);
+color: white;
+border: var(--main-color) solid;
+}
+
+.link-copy {
+margin-top: 10px;
+width: 356px;
+background-color: white;
+color: var(--black);
+border: var(--gray) solid;
+}
